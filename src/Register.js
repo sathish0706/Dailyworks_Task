@@ -21,7 +21,7 @@ export const formValidationSchema = yup.object({
   password: yup
     .string()
     .required("Please fill password")
-    .min(6, "Minimum 6 character needed"),
+    .min(8, "Minimum 8 character needed"),
 });
 function Register() {
   const navigate = useNavigate();
